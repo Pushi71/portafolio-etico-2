@@ -947,9 +947,9 @@
       <a href="https://www.linkedin.com/in/kevin-john-huarancca-mendoza-991a56335/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BOBmOBt24RXy5IVSYiS2V8g%3D%3D" target="_blank" style="background:linear-gradient(135deg, #0A66C2, #0A5BA3); color:white; padding:10px 26px; border-radius:40px; text-decoration:none; font-weight:600; display:inline-block; transition:all 0.3s;">Ver LinkedIn</a>
     </div>
     <div class="photo-upload-zone" id="uploadZone" onclick="document.getElementById('fileInput').click()">
-      <img id="imagePreview" src="#" alt="Foto de perfil">
+      <img id="imagePreview" src="images/imagen_perfil.jpeg" style="display:block;" alt="Foto de perfil">
       <div class="change-photo-btn" style="position:absolute; bottom:12px; right:12px; background:rgba(0,0,0,0.7); padding:4px 12px; border-radius:20px; font-size:0.7rem;">Cambiar</div>
-      <div id="uploadPlaceholder" style="text-align:center;"><div style="font-size:3rem;">👤</div><div class="upload-text">Subir mi foto</div></div>
+      <div id="uploadPlaceholder" style="text-align:center; display:none;"><div style="font-size:3rem;">👤</div><div class="upload-text">Subir mi foto</div></div>
       <input type="file" id="fileInput" accept="image/*" onchange="handleProfileImage(this)">
     </div>
   </div>
@@ -972,7 +972,7 @@
     <!-- Tarjeta 1: Metáfora artística (Neuralink) texto completo -->
     <div class="analisis-item" id="analisis1">
       <div class="analisis-img-container" onclick="document.getElementById('fileInput1').click()">
-        <img id="img1" class="analisis-img" src="#" alt="Metáfora artística"><div id="placeholder1" class="img-placeholder"><span>🖼️</span><span>Haz clic para subir tu imagen</span><small>(Interfaz cerebro-computadora / Neuralink)</small></div>
+        <img id="img1" class="analisis-img" src="images/primera_semana.png" style="display:block;" alt="Metáfora artística"><div id="placeholder1" class="img-placeholder" style="display:none;"><span>🖼️</span><span>Haz clic para subir tu imagen</span><small>(Interfaz cerebro-computadora / Neuralink)</small></div>
         <input type="file" id="fileInput1" accept="image/*" style="display:none" onchange="handleAnalisisImage(this, 1)">
       </div>
       <div class="analisis-content"><div class="analisis-title">📌 ¿Quiénes somos y hacia dónde vamos?</div>
@@ -982,7 +982,7 @@
     <!-- Tarjeta 2: Responsabilidad con poblaciones vulnerables, anclaje peruano -->
     <div class="analisis-item" id="analisis2">
       <div class="analisis-img-container" onclick="document.getElementById('fileInput2').click()">
-        <img id="img2" class="analisis-img" src="#" alt="Poblaciones vulnerables"><div id="placeholder2" class="img-placeholder"><span>🛡️</span><span>Haz clic para subir tu imagen</span><small>(Poblaciones vulnerables)</small></div>
+        <img id="img2" class="analisis-img" src="images/segunda_semana.png" style="display:block;" alt="Poblaciones vulnerables"><div id="placeholder2" class="img-placeholder" style="display:none;"><span>🛡️</span><span>Haz clic para subir tu imagen</span><small>(Poblaciones vulnerables)</small></div>
         <input type="file" id="fileInput2" accept="image/*" style="display:none" onchange="handleAnalisisImage(this, 2)">
       </div>
       <div class="analisis-content"><div class="analisis-title">🤝 ¿A quién le debemos responsabilidad?</div>
@@ -992,7 +992,7 @@
     <!-- Tarjeta 3: Jerarquía de valores con tensión axiológica -->
     <div class="analisis-item" id="analisis3">
       <div class="analisis-img-container" onclick="document.getElementById('fileInput3').click()">
-        <img id="img3" class="analisis-img" src="#" alt="Jerarquía de valores"><div id="placeholder3" class="img-placeholder"><span>⚖️</span><span>Haz clic para subir tu imagen</span><small>(Jerarquía de valores)</small></div>
+        <img id="img3" class="analisis-img" src="images/tercera_semana.png" style="display:block;" alt="Jerarquía de valores"><div id="placeholder3" class="img-placeholder" style="display:none;"><span>⚖️</span><span>Haz clic para subir tu imagen</span><small>(Jerarquía de valores)</small></div>
         <input type="file" id="fileInput3" accept="image/*" style="display:none" onchange="handleAnalisisImage(this, 3)">
       </div>
       <div class="analisis-content"><div class="analisis-title">💎 ¿Qué valoramos? Nuestra jerarquía de valores</div>
@@ -1009,7 +1009,7 @@
     <!-- Tarjeta 4: Mapa de negligencias, con casos peruanos -->
     <div class="analisis-item" id="analisis4">
       <div class="analisis-img-container" onclick="document.getElementById('fileInput4').click()">
-        <img id="img4" class="analisis-img" src="#" alt="Mapa de negligencias"><div id="placeholder4" class="img-placeholder"><span>🗺️</span><span>Haz clic para subir tu imagen</span><small>(Negligencias y acciones positivas)</small></div>
+        <img id="img4" class="analisis-img" src="images/fotosem_4.png" style="display:block;" alt="Mapa de negligencias"><div id="placeholder4" class="img-placeholder" style="display:none;"><span>🗺️</span><span>Haz clic para subir tu imagen</span><small>(Negligencias y acciones positivas)</small></div>
         <input type="file" id="fileInput4" accept="image/*" style="display:none" onchange="handleAnalisisImage(this, 4)">
       </div>
       <div class="analisis-content"><div class="analisis-title">⚠️ Mapa de negligencias y acciones positivas</div>
@@ -1149,9 +1149,9 @@
   let msgIndex = 0;
   const statusMessages = ['✨ CONSTRUYENDO ÉTICA DIGITAL ✨','⚡ INTEGRANDO VALORES TECNOLÓGICOS ⚡','🔒 CIFRANDO PRINCIPIOS ÉTICOS 🔒','🤖 HUMANIZANDO LA TECNOLOGÍA 🤖','🌐 CONECTANDO CON PROPÓSITO 🌐','🛡️ CIBERSEGURIDAD CON VALORES 🛡️','💡 ILUMINANDO EL CAMINO ÉTICO 💡'];
   let carouselImages = [
-    "https://cdn.pixabay.com/photo/2019/10/13/17/27/artificial-intelligence-4547179_640.jpg",
-    "https://cdn.pixabay.com/photo/2018/05/08/08/44/artificial-intelligence-3382507_640.jpg",
-    "https://cdn.pixabay.com/photo/2015/07/17/22/43/technology-851487_640.jpg"
+    "images/inicio_1.jpg",
+    "images/inicio_2.jpg",
+    "images/inicio_3.jpg"
   ];
   
   function updateCarouselImage() {
